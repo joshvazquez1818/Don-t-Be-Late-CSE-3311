@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 
 public class Movement : MonoBehaviour
@@ -33,8 +33,11 @@ public class Movement : MonoBehaviour
 			spriteRenderer.flipX = true;
 		}
 		if(Input.GetKey(KeyCode.Space)) //jumping
+		{
 			body.velocity = new Vector2(body.velocity.x, speed);
-		
+
+		}
 		animate.SetBool("run", horizontalinput != 0); //animation, run if bool is true
 	}
+
 }
