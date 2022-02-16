@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 	private Rigidbody2D body; //applies body physics
 	private Animator animate; //applies animation
 	private SpriteRenderer spriteRenderer;
+	private bool isJumping;
 	private void Awake()
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -32,12 +33,19 @@ public class Movement : MonoBehaviour
 		{
 			spriteRenderer.flipX = true;
 		}
-		if(Input.GetKey(KeyCode.Space)) //jumping
+		if(Input.GetKey(KeyCode.Space) && !isJumping) //jumping
 		{
 			body.velocity = new Vector2(body.velocity.x, speed);
-
+			isJumping = true;
 		}
 		animate.SetBool("run", horizontalinput != 0); //animation, run if bool is true
 	}
 
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.gameObject.CompareTag("Ground"))
+		{
+			isJumping = false;
+		}
+	}
 }
