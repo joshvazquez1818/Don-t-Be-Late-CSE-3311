@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
 		animate.SetBool("run", horizontalinput != 0); //animation, run if bool is true
 	}
 
+	//checks if player is on the ground/platform
 	void OnCollisionEnter2D(Collision2D other)
 	{
 		if(other.gameObject.CompareTag("Ground"))
