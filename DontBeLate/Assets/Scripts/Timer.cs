@@ -14,21 +14,26 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Convert starting time to seconds
         currentTime = startMinutes * 60;
     }
 
     // Update is called once per frame
     void Update()
     {
+        // If timer hasnt reached 0
         if (timerActive == true)
         {
+            // Count down timer
             currentTime = currentTime - Time.deltaTime;
+            // Restart level when timer reaches 0
             if(currentTime <= 0) 
             {
                 timerActive = false;
                 ChangeScene();
             }
         }
+        // Display timer
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         currentTimeText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString();
     }
