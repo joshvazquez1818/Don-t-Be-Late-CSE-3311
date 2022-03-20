@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
 	private Animator animate; //applies animation
 	private SpriteRenderer spriteRenderer;
 	private bool isJumping;
+	private bool ground;
 	private void Awake()
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -33,20 +34,35 @@ public class Movement : MonoBehaviour
 		{
 			spriteRenderer.flipX = true;
 		}
-		if(Input.GetKey(KeyCode.Space) && !isJumping) //jumping
+		if(Input.GetKey(KeyCode.Space)&& ground) //&& !isJumping
 		{
-			body.velocity = new Vector2(body.velocity.x, speed);
-			isJumping = true;
+			//body.velocity = new Vector2(body.velocity.x, speed);
+			//isJumping = true;
+			jump();
 		}
 		animate.SetBool("run", horizontalinput != 0); //animation, run if bool is true
+		animate.SetBool("ground", ground);
+		
 	}
-
-	//checks if player is on the ground/platform
-	void OnCollisionEnter2D(Collision2D other)
+	
+	private void jump()
 	{
-		if(other.gameObject.CompareTag("Ground"))
-		{
-			isJumping = false;
-		}
+		body.velocity = new Vector2(body.velocity.x, speed);
+		animate.SetTrigger("jump");
+		ground = false;
 	}
+	
+	//checks if player is on the ground/platform
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		ground = true;
+		//if(other.gameObject.CompareTag("Ground"))
+		//{
+		//	 = false;
+		//}
+	}
+	
+
+
+	
 }

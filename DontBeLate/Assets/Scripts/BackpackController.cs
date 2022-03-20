@@ -22,6 +22,10 @@ public class BackpackController : MonoBehaviour
             {
                 SceneManager.LoadScene(2);
             }
+			else if(scene.name == "Level_1_3")
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
 }
