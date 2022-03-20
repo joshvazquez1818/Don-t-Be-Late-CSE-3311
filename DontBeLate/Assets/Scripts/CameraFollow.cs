@@ -1,14 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class TitleToGame : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene(3);
-    }
+    public Transform followTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +14,6 @@ public class TitleToGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.transform.position = new Vector3(followTransform.position.x, followTransform.position.y, this.transform.position.z);
     }
 }
