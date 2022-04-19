@@ -297,6 +297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9131f6ae570f8d44bee1a6456d6ab73, type: 3}
+--- !u!1 &618488520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5585022174772985784, guid: 3cb54d4db2945db4398ef2eed8ae9399, type: 3}
+  m_PrefabInstance: {fileID: 5585022174520371901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1657062713
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +482,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9131f6ae570f8d44bee1a6456d6ab73, type: 3}
+--- !u!1 &1848363630 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7198259490900272036, guid: d9131f6ae570f8d44bee1a6456d6ab73, type: 3}
+  m_PrefabInstance: {fileID: 2005745393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1848363631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848363630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a79e6feef80aa4c8fda8c91fc5a5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1894946057 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5585022174772985780, guid: 3cb54d4db2945db4398ef2eed8ae9399, type: 3}
@@ -835,6 +857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog
       objectReference: {fileID: 0}
+    - target: {fileID: 6519848036083130662, guid: 4bff5d2d26966884a80ce2bbc3609b63, type: 3}
+      propertyPath: playerObject
+      value: 
+      objectReference: {fileID: 618488520}
     - target: {fileID: 6519848036083130663, guid: 4bff5d2d26966884a80ce2bbc3609b63, type: 3}
       propertyPath: m_RootOrder
       value: 11
