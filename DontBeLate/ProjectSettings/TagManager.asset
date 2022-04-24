@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Ground
   - Item
-  - Coffee
+  - Elevator
   layers:
   - Default
   - TransparentFX
