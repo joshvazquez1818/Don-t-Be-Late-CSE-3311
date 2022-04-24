@@ -10,8 +10,11 @@ public class Movement : MonoBehaviour
 	private Rigidbody2D body; //applies body physics
 	private Animator animate; //applies animation
 	private SpriteRenderer spriteRenderer;
+
 	private bool isJumping;
 	private bool ground;
+
+
 	private void Awake()
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
