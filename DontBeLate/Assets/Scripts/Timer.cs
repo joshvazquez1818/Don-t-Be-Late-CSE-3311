@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    float currentTime;
+    public float currentTime;
     public int startMinutes;
     public Text currentTimeText;
     bool timerActive = true;
@@ -40,5 +40,9 @@ public class Timer : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public float returnTime()
+    {
+        return currentTime;
     }
 }

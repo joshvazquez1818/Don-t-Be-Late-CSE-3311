@@ -177,7 +177,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1600, y: 900}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 253181578}
   - component: {fileID: 253181577}
   - component: {fileID: 253181576}
+  - component: {fileID: 253181579}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -379,6 +380,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253181574}
   m_CullTransparentMesh: 1
+--- !u!114 &253181579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253181574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b848279c38627b498fffaf319f9e9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +677,7 @@ GameObject:
   - component: {fileID: 984427210}
   - component: {fileID: 984427209}
   - component: {fileID: 984427208}
+  - component: {fileID: 984427211}
   m_Layer: 5
   m_Name: HighScoreButton
   m_TagString: Untagged
@@ -734,7 +748,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 984427209}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 152654080}
+        m_TargetAssemblyTypeName: TitleManager, Assembly-CSharp
+        m_MethodName: HighScores
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984427209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +799,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984427206}
   m_CullTransparentMesh: 1
+--- !u!114 &984427211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984427206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b848279c38627b498fffaf319f9e9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1202405718
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +898,7 @@ GameObject:
   - component: {fileID: 1217059014}
   - component: {fileID: 1217059013}
   - component: {fileID: 1217059012}
+  - component: {fileID: 1217059015}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -932,8 +971,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 152654080}
-        m_TargetAssemblyTypeName: TitleToGame, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_TargetAssemblyTypeName: TitleManager, Assembly-CSharp
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -981,6 +1020,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217059010}
   m_CullTransparentMesh: 1
+--- !u!114 &1217059015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217059010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b848279c38627b498fffaf319f9e9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1228946390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1486,7 @@ GameObject:
   - component: {fileID: 1804435277}
   - component: {fileID: 1804435276}
   - component: {fileID: 1804435275}
+  - component: {fileID: 1804435278}
   m_Layer: 5
   m_Name: LoadGameButton
   m_TagString: Untagged
@@ -1505,7 +1557,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1804435276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 152654080}
+        m_TargetAssemblyTypeName: TitleManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1804435276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1544,6 +1608,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804435273}
   m_CullTransparentMesh: 1
+--- !u!114 &1804435278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804435273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b848279c38627b498fffaf319f9e9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010736793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +1632,7 @@ GameObject:
   - component: {fileID: 2010736797}
   - component: {fileID: 2010736796}
   - component: {fileID: 2010736795}
+  - component: {fileID: 2010736798}
   m_Layer: 5
   m_Name: QuitGameButton
   m_TagString: Untagged
@@ -1579,7 +1656,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 769, y: 422}
+  m_AnchoredPosition: {x: 919, y: 400}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010736795
@@ -1676,6 +1753,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010736793}
   m_CullTransparentMesh: 1
+--- !u!114 &2010736798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010736793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b848279c38627b498fffaf319f9e9cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2108532988
 GameObject:
   m_ObjectHideFlags: 0
