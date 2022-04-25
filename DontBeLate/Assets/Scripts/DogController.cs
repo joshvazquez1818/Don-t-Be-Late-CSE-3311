@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class DogController : MonoBehaviour
 {
-    public GameObject playerObject;
+    private GameObject playerObject;
     Vector3 startingPos;
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,6 +16,7 @@ public class DogController : MonoBehaviour
     }
     public void Start()
     {
+        playerObject = GameObject.FindGameObjectWithTag("Player");
         startingPos = playerObject.transform.position;
     }
     public void ChangeScene()

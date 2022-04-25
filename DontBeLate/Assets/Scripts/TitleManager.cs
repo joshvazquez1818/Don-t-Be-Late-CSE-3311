@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TitleToGame : MonoBehaviour
+public class TitleManager : MonoBehaviour
 {
-    public void ChangeScene()
+    public void NewGame()
     {
-        SceneManager.LoadScene(3);
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(1);
+    }
+    public void HighScores()
+    {
+        SceneManager.LoadScene(8);
+    }
+    public void LoadGame()
+    {
+        SceneManager.LoadScene(9);
     }
     // Start is called before the first frame update
     void Start()
