@@ -16,16 +16,39 @@ public class BackpackController : MonoBehaviour
             Destroy(gameObject);
             if(scene.name == "Level_1_1")
             {
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(3);
             }
             else if(scene.name == "Level_1_2")
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(4);
             }
 			else if(scene.name == "Level_1_3")
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(5);
             }
+			
+			else if(scene.name == "Level_2_1")
+            {
+                SceneManager.LoadScene(6);
+            }
+			
+			else if(scene.name == "Level_2_2")
+            {
+                SceneManager.LoadScene(7);
+            }
+			
+			
+			else if(scene.name == "Level_3_1")
+            {
+                SceneManager.LoadScene(8);
+            }
+			
+			else if(scene.name == "Level_3_2")
+            {
+                SceneManager.LoadScene(1);
+            }
+			
+			
         }
     }
 }
