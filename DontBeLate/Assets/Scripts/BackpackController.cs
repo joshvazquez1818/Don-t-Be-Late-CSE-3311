@@ -16,7 +16,7 @@ public class BackpackController : MonoBehaviour
         {
             savemanager.saveLevel();
             Destroy(gameObject);
-            SceneManager.LoadScene(10);
+            SceneManager.LoadScene(11);
             
         }
     }

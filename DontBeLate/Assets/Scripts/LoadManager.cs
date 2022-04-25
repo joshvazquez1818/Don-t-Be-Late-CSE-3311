@@ -34,7 +34,7 @@ public class LoadManager : MonoBehaviour
         {
             Debug.Log(PlayerPrefs.GetInt("level").ToString());
             savedLevel = PlayerPrefs.GetInt("level");
-            for (int i = 0; i < savedLevel; i++)
+            for (int i = 0; i <= savedLevel; i++)
             {
                 buttons[i].SetActive(true);
             }

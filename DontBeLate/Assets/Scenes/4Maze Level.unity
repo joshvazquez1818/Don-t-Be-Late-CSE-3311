@@ -6559,22 +6559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2115157582}
     m_Modifications:
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3782953365171839043, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
       propertyPath: m_Name
       value: Time

@@ -208,7 +208,7 @@ Transform:
   m_LocalScale: {x: 557.7562, y: 550.6934, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &18562570 stripped
 Transform:
@@ -431,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5585022174772985783, guid: 3cb54d4db2945db4398ef2eed8ae9399, type: 3}
       propertyPath: speed
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5585022174772985784, guid: 3cb54d4db2945db4398ef2eed8ae9399, type: 3}
       propertyPath: m_Name
@@ -1906,7 +1906,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &758555466 stripped
 Transform:
@@ -4264,7 +4264,7 @@ RectTransform:
   m_Children:
   - {fileID: 1399655972}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4354,22 +4354,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2115157582}
     m_Modifications:
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782953365171839040, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3782953365171839043, guid: 3a0a0344428d28b4f99d7c2be38d0e2c, type: 3}
       propertyPath: m_Name
       value: Time

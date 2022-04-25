@@ -16,7 +16,7 @@ public class TitleManager : MonoBehaviour
     }
     public void LoadGame()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(12);
     }
     // Start is called before the first frame update
     void Start()
